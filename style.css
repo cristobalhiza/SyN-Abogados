@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Century Gothic', sans-serif;
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-principal: #005989;
+    --color-secundario: #ffffff;
+    --size-texto: 1.6rem;
+    --size-encabezado: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+/* HEADER */
+.header {
+    /* display: grid; */
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo centro derecha";
+    border-bottom: var(--color-principal) solid 1px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /* cambiar height con resolución desktop  */
+    height: 10vh;
+    }
+.logo {
+    grid-area: logo;
+    width:32vw;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.logo__img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.search-area {
+    grid-area: derecha;
+    max-width: 50%;
+    align-self: center;
+    justify-self: right;
+    border-radius: 15px;
+}
+.menu-icon {
+    grid-area: derecha;
+    align-self: center;
+    justify-self:end;
+}
+/* Menú header */
+.nav {
+    display: none;
+}
+
+.main-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-menu__link {
+    font-size: 1.6rem;
+}
+
+/* PORTADA */
+
+.cover {
+    background-image: url(./img/portadaindex-L.jpg);
+    background-color: --color-principal;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 30%;
+    width: 100vw;
+    background-size: cover;
+    /* cambiar height con resolución desktop */
+    height: 52vh;
+}
+
+.cover__slogan {
+    color: black;
+    font-weight: 600;
+    font-size:1.4rem;
+    background-color: hsl(0, 0%, 100%, .6);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.cover__headline {
+    font-weight: 200;
+    display: none;
+    margin-top: 25%;
+}
+
+.cover__cta-link {
+        height: 66px;
+        padding: 10px 15px 10px 15px;
+        background-color: var(--color-principal);
+        color: var(--color-secundario);
+        border: black solid 1px;
+        border-radius: 20px 20px 20px 20px;
+        font-weight: 400;
+        font-size: 1rem;
+}
+
+/* SECCIÓN ESTUDIO */
+
+.nosotros {
+    border:black solid 1px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 35px;
+    
+}
+
+.nosotros__text {
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.nosotros__img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.nosotros__img-container {
+    flex-basis: 50%;
+}
+
+/* .nosotros__container {
+    /* flex-basis: 100%;
+ } */
