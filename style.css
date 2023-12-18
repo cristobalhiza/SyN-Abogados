@@ -39,7 +39,6 @@ ul li {
     display: flex;
     border-bottom: var(--color-principal) solid 1px;
     justify-content: space-around;
-    /* cambiar height con resolución desktop  */
     min-height: 10vh;
     z-index: 1000;
     position: sticky;
@@ -76,9 +75,10 @@ ul li {
     align-self: center;
     justify-self: end;
     margin-right: 10px;
+    width: 25px;
 }
 
-/* Header Menu */
+/* HEADER MENU */
 .nav {
     display: none;
 }
@@ -339,6 +339,58 @@ ul li {
     line-height: 2.5rem;
     color: #ffffff;
 }
+
+/* PAGINA DE CONTACTO */
+
+.contact-heading {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap: 1.6rem;
+    font-size: var(--size-texto);
+}
+
+.office-container {
+    row-gap: 0;
+    margin: 5rem auto;
+    padding: 0 1.6rem;
+    /* max-height: 620px; */
+}
+
+.office-text {
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 3.2rem auto 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+    padding: 1.6rem 3.2rem;
+    max-width: 500px;
+    min-height: 300px;
+    font-size: var(--size-texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.map {
+    margin: 0 auto 25px auto;
+    max-width: 500px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.map__iframe {
+    object-fit: cover;
+    width: 100%;
+    min-height: 400px;
+}
+
+
 
 /* MEDIA QUERIES */
 

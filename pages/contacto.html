@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyN Abogados - Contacto</title>
 </head>
+
 <body>
-    <header>
-        <a title="SyN Abogados Inicio" href="../index.html">
-        <img src="../img/logosyn.png" alt="Logo Schwenke y Nilo Abogados">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="./nuestro-estudio.html">Nuestro Estudio</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="./areas.html">Áreas de Práctica</a></li>
-                <li><a href="./informa.html">SyNLegal Informa</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <!-- LOGO  -->
+    <header class="header">
+        <div class="logo">
+            <a title="SyN Abogados Inicio" href="../index.html" class="logo__link">
+                <img src="../img/logosyn.png" alt="Logo Schwenke y Nilo Abogados" class="logo__img">
+            </a>
+        </div>
+        <!-- MENU LISTA -->
+        <nav class="nav">
+            <ul class="main-menu">
+                <li class="main-menu__item"><a href="../pages/nuestro-estudio.html">Nuestro Estudio</a></li>
+                <li class="main-menu__item"><a href="../pages/equipo.html">Equipo</a></li>
+                <li class="main-menu__item"><a href="../pages/areas.html">Áreas de Práctica</a></li>
+                <li class="main-menu__item"><a href="../pages/informa.html">SyN Legal Informa</a></li>
+                <li class="main-menu__item"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="main-menu__item"><a href="../pages/trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
             </ul>
         </nav>
+        <!-- BUSQUEDA Y MENU ICONO -->
+        <input type="search" placeholder="Busqueda" class="search-area">
+        <img src="../img/menu-icon.svg" alt="menu icon" class="menu-icon">
+
     </header>
     <main>
-        <h1>Contacto</h1>
-        <p><em>Confíe en nosotros, buscamos lo mejor para usted</em></p>
-        <section class="Oficinas">
-            <h2>Nuestras oficinas:</h2>
-            <p><address>Avenida Arturo Prat 234, Valdivia, Región de Los Ríos, Chile<br>
-            Avenida Libertador Bernardo O'higgins 3421, Santiago, Región Metropolitana, Chile</address><br></p>
-            +56 2 9876 5432<br>
-            estudio@synabogados.cl<br>
-            <div style="width: 100%"><iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Avenida%20Arturo%20Prat%20234,%20Valdivia,%20Regi%C3%B3n%20de%20Los%20R%C3%ADos,%20Chile+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+        <div class="contact-heading">
+            <h1>Contacto</h1>
+            <p><em>Confíe en nosotros, buscamos lo mejor para usted</em></p>
+        </div>
+        <section class="office-container">
+            <div class="office-text">
+                <h2 class="office__heading">Dónde Ubicarnos</h2>
+                <p>
+                <address>Av. Arturo Prat, Valdivia, Región de Los Ríos, Chile</p>
+                    <p>Av. Libertador Bernardo O'higgins 3421, Santiago, Chile
+                </address><br>
+                <strong>Teléfonos</strong>
+                Of. Central	: +56 2 9876 5432<br>
+                Santiago: +56 2 32145678<br>
+                <strong>Información General</strong><br>
+                estudio@synabogados.cl<br>
+                <strong>información de Prensa</strong><br>
+                medios@fsynabogados.cl<br>
+                <strong>Postulaciones</strong><br>
+                postulaciones@synabogados.cl
+                </p>
+            </div>
+            <div class="map">
+                <iframe class="map__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6129.795386695947!2d-73.2464777!3d-39.8092866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615edd90f421b77%3A0x60f19fea01eed156!2sAv.%20Arturo%20Prat%20234%2C%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses-419!2scl!4v1702926279773!5m2!1ses-419!2scl"
+                    width="100%" height="100%"></iframe>
+            </div>
         </section>
-        <section>
+        <section class="contact-container">
             <h2>¿Tiene alguna consulta? Escribanos</h2>
             <form action="" id="contactForm">
                 <input type="text" placeholder="Nombre*">
@@ -45,31 +75,36 @@
             </form>
         </section>
     </main>
-    <footer>
-        <section class="footerContacto">
-            <h3>Nuestras oficinas:</h3>
-            <p><address>Avenida Arturo Prat, Valdivia, Región de Los Ríos, Chile<br>
-            Avenida Libertador Bernardo O'higgins 3421, Santiago, Región Metropolitana, Chile</address><br>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <section class="footer-contacto">
+            <h4 class="footer__heading">Oficinas:</h4>
+            <p>
+            <address>Av. Arturo Prat, Valdivia, Región de Los Ríos, Chile</p>
+                <p>Av. Libertador Bernardo O'higgins 3421, Santiago, Chile
+            </address><br>
             +56 2 9876 5432<br>
             estudio@synabogados.cl<br>
             </p>
         </section>
-        <div class="footerCentro">
-            <p>© 2023 SyN Abogados    |    <a href="diclaimer.html" >Disclaimer</a>    |    <a href="privacidadycookies.html" >Políticas de Privacidad y Cookies</a></p>
+        <div class="footer-centro">
+            <p class="footer-centro__text">© 2023 SyN Abogados </p> | <a href="diclaimer.html">Disclaimer</a> |
+            <a href="privacidadycookies.html">Políticas de Privacidad y Cookies</a>
         </div>
-        <div class="footerMapa">
-            <p>
-            Mapa del sitio
-            </p>
-            <ul class="footerLinks">
-                <li><a href="./nuestro-estudio.html">Nuestro Estudio</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="./areas.html">Áreas de Práctica</a></li>
-                <li><a href="./informa.html">SyNLegal Informa</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
+        <div class="footer-mapa">
+            <h4 class="footer__heading">Mapa del sitio</h4>
+            <ul class="footer-mapa__links">
+                <li><a href="../pages/nuestro-estudio.html">Nuestro Estudio</a></li>
+                <li><a href="../pages/equipo.html">Equipo</a></li>
+                <li><a href="../pages/areas.html">Áreas de Práctica</a></li>
+                <li><a href="../pages/informa.html">SyNLegal Informa</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
             </ul>
         </div>
     </footer>
 </body>
+
 </html>
