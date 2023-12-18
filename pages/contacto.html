@@ -31,13 +31,16 @@
         <!-- BUSQUEDA Y MENU ICONO -->
         <input type="search" placeholder="Busqueda" class="search-area">
         <img src="../img/menu-icon.svg" alt="menu icon" class="menu-icon">
-
     </header>
+
+    <!-- INICIO MAIN -->
     <main>
+        <!-- HEADING -->
         <div class="contact-heading">
             <h1>Contacto</h1>
             <p><em>Confíe en nosotros, buscamos lo mejor para usted</em></p>
         </div>
+        <!-- LOCATION -->
         <section class="office-container">
             <div class="office-text">
                 <h2 class="office__heading">Dónde Ubicarnos</h2>
@@ -46,7 +49,7 @@
                     <p>Av. Libertador Bernardo O'higgins 3421, Santiago, Chile
                 </address><br>
                 <strong>Teléfonos</strong>
-                Of. Central	: +56 2 9876 5432<br>
+                Of. Central : +56 2 9876 5432<br>
                 Santiago: +56 2 32145678<br>
                 <strong>Información General</strong><br>
                 estudio@synabogados.cl<br>
@@ -56,21 +59,23 @@
                 postulaciones@synabogados.cl
                 </p>
             </div>
+            <!-- MAP IFRAME -->
             <div class="map">
                 <iframe class="map__iframe"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6129.795386695947!2d-73.2464777!3d-39.8092866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615edd90f421b77%3A0x60f19fea01eed156!2sAv.%20Arturo%20Prat%20234%2C%20Valdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses-419!2scl!4v1702926279773!5m2!1ses-419!2scl"
                     width="100%" height="100%"></iframe>
             </div>
         </section>
+        <!-- CONTACT FORM -->
         <section class="contact-container">
-            <h2>¿Tiene alguna consulta? Escribanos</h2>
-            <form action="" id="contactForm">
-                <input type="text" placeholder="Nombre*">
-                <input type="text" placeholder="Apellido*"><br>
-                <input type="email" placeholder="Email*">
-                <input type="tel" placeholder="Teléfono*"><br>
-                <label for="consulta">Escriba aquí su requerimiento</label><br>
-                <textarea form="contactForm" id="consulta" cols="30" rows="10"></textarea>
+            <h2 class="contact-heading">¿Tiene alguna consulta? ¡Escribanos!</h2>
+            <form action="" id="contactForm" class="contact-form">
+                <input class="contact-form__input" type="text" placeholder="Nombre*">
+                <input class="contact-form__input" type="text" placeholder="Apellido*">
+                <input class="contact-form__input" type="email" placeholder="Email*">
+                <input class="contact-form__input" type="tel" placeholder="Teléfono*">
+                <label for="consulta" class="contact-form__consulta">Escriba aquí su requerimiento</label>
+                <textarea form="contactForm" id="consulta" class="contact-form__consulta" cols="30" rows="10" placeholder=" ..."></textarea>
                 <input type="submit">
             </form>
         </section>
