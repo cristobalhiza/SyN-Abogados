@@ -357,7 +357,6 @@ ul li {
 /* LOCATION */
 
 .office-container {
-    row-gap: 0;
     margin: 5rem auto;
     padding: 0 1.6rem;
     /* max-height: 620px; */
@@ -368,10 +367,9 @@ ul li {
     border-style: solid;
     border-color: black;
     margin: 3.2rem auto 0 auto;
-    text-align: justify;
     line-height: 1.8;
     padding: 1.6rem 3.2rem;
-    max-width: 500px;
+    max-width: 600px;
     min-height: 300px;
     font-size: var(--size-texto);
     display: flex;
@@ -385,7 +383,7 @@ ul li {
 
 .map {
     margin: 0 auto 25px auto;
-    max-width: 500px;
+    max-width: 600px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
     border-color: black;
@@ -513,6 +511,35 @@ text-align: left;
         width: 33vw;
         min-width: 50rem;
     }
+
+    /* PAGINA DE CONTACTO */
+
+    .office-container {
+        display: flex;
+        align-items: start;
+        margin: 10rem auto;
+        width: 80vw;
+        max-width: 1900px;
+    }
+
+    .office-text {
+        margin: 0 0 0 auto;
+        width: 40vw;
+        max-width: none;
+        min-height: 500px;
+    }
+
+    .map {
+        margin: 0 auto 0 0;
+        max-width: 1900px;
+    }
+
+    .map__iframe {
+        width: 40vw;
+        min-height: 500px;
+    }
+
+    
 }
 
 @media (min-width: 1200px) {
