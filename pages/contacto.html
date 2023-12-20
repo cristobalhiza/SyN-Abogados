@@ -69,11 +69,11 @@
         <!-- CONTACT FORM -->
             <form action="" id="contactForm" class="contact-form">
                 <h2 class="contact-heading">¿Tiene alguna consulta? ¡Escribanos!</h2>
-                <input class="contact-form__input contact-form__input1" type="text" placeholder="Nombre*">
-                <input class="contact-form__input contact-form__input2" type="text" placeholder="Apellido*">
-                <input class="contact-form__input contact-form__input3" type="email" placeholder="Email*">
-                <input class="contact-form__input contact-form__input4" type="tel" placeholder="Teléfono*">
-                <label for="consulta" class="contact-form__consulta-label">Escriba aquí su requerimiento</label>
+                <input class="contact-form__input contact-form__input1" type="text" placeholder="Nombre*" required>
+                <input class="contact-form__input contact-form__input2" type="text" placeholder="Apellido*" required>
+                <input class="contact-form__input contact-form__input3" type="email" placeholder="Email*" required>
+                <input class="contact-form__input contact-form__input4" type="tel" maxlength="9" placeholder="Teléfono*" required>
+                <label for="consulta" class="contact-form__consulta-label">Escriba a continuación su consulta:</label>
                 <textarea form="contactForm" id="consulta" class="contact-form__consulta" cols="30" rows="10" placeholder=" ..."></textarea>
                 <input type="submit" class="contact-form__submit">
             </form>

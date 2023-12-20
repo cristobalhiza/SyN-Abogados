@@ -408,15 +408,33 @@ ul li {
     min-width: 10rem;
     width: 60vw;
     max-width: 30rem;
-    height: 5rem;
-    padding: 1rem;
+    height: 3.2rem;
+    padding: 2rem 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-principal);
     background: #FFFFFF;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 3px 3px 3px 3px;
     font-weight: 400;
     text-align: left;
+    transition: 0.4 linear;
+    font-size: var(--size-texto);
+}
+
+.contact-form__input:focus, .contact-form__input:valid {
+    background-color: #e6f6ff;
+    color: black;
+    border-radius: 20px;
+}
+
+::placeholder {
+    color: var(--color-principal);
+}
+
+.contact-form__consulta-label {
+    font-size: var(--size-texto);
+    color: var(--color-principal);
+    font-weight: 600;
+    margin-left: 1rem;
 }
 
 .contact-form__consulta {
@@ -424,11 +442,12 @@ ul li {
     display: inline-block;
     width: 60vw;
     max-width: 1000px;
-}
-
-.contact-form__consulta-label {
+    border-color: #00456a;
+    border-radius: 20px;
+    padding: 1rem;
     font-size: var(--size-texto);
 }
+
 
 .contact-form__submit {
     padding: 0.5rem;
@@ -439,6 +458,7 @@ ul li {
     font-size: var(--size-texto);
     border-radius: 2rem;
     box-shadow: 0 0.2rem 0.2rem 0 black;
+    margin: 1rem auto;
 }
 
 /* MEDIA QUERIES */
@@ -572,6 +592,7 @@ ul li {
         grid-template:  [heading-left] "heading heading" auto  [heading-right]
                         [input1-left] "input1  input2" auto    [input2-right]
                         [input3-left] "input3  input4" auto    [input4-right]
+                        [label-left]   "label label" auto    [label-right]
                         [textArea-left]"textArea textArea" auto[textArea-right]
                         [submit-left]	"submit submit" auto   [submit-right]
                         / auto auto;
@@ -607,7 +628,11 @@ ul li {
     }
 
     .contact-form__consulta-label {
-        display: none;
+        display: inline-block;
+        grid-area: label;
+        justify-self:left;
+        margin-left:20%;
+        margin-top: 3.2rem;
     }
 
     .contact-form__input {
