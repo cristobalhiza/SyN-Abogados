@@ -80,6 +80,10 @@ ul li {
 
 .nav {
     display: none;
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+
 }
 
 .main-menu {
@@ -87,28 +91,21 @@ ul li {
     padding-left: 0;
     background-color: var(--color-principal);
     font-size: var(--size-texto);
-    position: absolute;
-    left: 0;
-    top: 10vh;
     width: 100%;
-    display: block;
 }
 
 .main-menu__item {
     color: var(--color-secundario);
     text-transform: uppercase;
-    border: whitesmoke solid 1px;
+    border: var(--color-secundario) solid 1px;
     width: 100%;
     text-align: center;
-    height: 6vh;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
 }
 
 .main-menu__link {
-    padding:2rem;
-    width: 100%;
     display: inline-block;
+    width: 100%;
     height: 100%;
     padding:2rem;
     font-size: var(--size-texto);
