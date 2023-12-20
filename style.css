@@ -69,17 +69,15 @@ ul li {
     justify-self: right;
     border-radius: 15px;
     padding-left: 1rem;
-}
+    }
 
-.menu-icon {
-    grid-area: derecha;
-    align-self: center;
-    justify-self: end;
-    margin-right: 10px;
-    width: 25px;
-}
 
 /* HEADER MENU */
+.menu-icon {
+    width: 100%;
+    object-fit: cover;
+}
+
 .nav {
     display: none;
 }
@@ -87,10 +85,52 @@ ul li {
 .main-menu {
     list-style: none;
     padding-left: 0;
+    background-color: var(--color-principal);
+    font-size: var(--size-texto);
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    display: block;
+}
+
+.main-menu__item {
+    color: var(--color-secundario);
+    text-transform: uppercase;
+    border: whitesmoke solid 1px;
+    width: 100%;
+    text-align: center;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-menu__link {
-    font-size: 1.6rem;
+    padding:2rem;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    padding:2rem;
+    font-size: var(--size-texto);
+}
+.main-menu__link:hover {
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ .nav {
+    display: inline-block;
+}
+
+.nav-toggle-label {
+    grid-area: derecha;
+    align-self: center;
+    margin-right: 1rem;
+    width: 25px;
 }
 
 /* PORTADA */
@@ -142,10 +182,16 @@ ul li {
     padding: 10px 15px 10px 15px;
     background-color: var(--color-principal);
     color: var(--color-secundario);
-    border: black solid 1px;
+    border: black solid 2px;
     border-radius: 20px;
     font-weight: 400;
     font-size: var(--size-texto);
+}
+
+.hero__cta-link:hover {
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+    font-weight: 600;
 }
 
 /* SECCIÓN NOSOTROS */
@@ -401,7 +447,7 @@ ul li {
     row-gap: 2rem;
     justify-items: center;
     margin: 3.2rem;
-    border:var(--color-principal) solid 2px;
+    border: var(--color-principal) solid 2px;
 }
 
 .contact-form__input {
@@ -420,7 +466,8 @@ ul li {
     font-size: var(--size-texto);
 }
 
-.contact-form__input:focus, .contact-form__input:valid {
+.contact-form__input:focus,
+.contact-form__input:valid {
     background-color: #e6f6ff;
     color: black;
     border-radius: 20px;
@@ -595,11 +642,10 @@ ul li {
                         [label-left]   "label label" auto    [label-right]
                         [textArea-left]"textArea textArea" auto[textArea-right]
                         [submit-left]	"submit submit" auto   [submit-right]
-                        / auto auto;
-        justify-items: center;
+                        / auto auto;        justify-items: center;
         align-items: start;
         column-gap: 1.6rem;
-        border:var(--color-principal) solid 3px;
+        border: var(--color-principal) solid 3px;
     }
 
     .contact-heading {
@@ -630,8 +676,8 @@ ul li {
     .contact-form__consulta-label {
         display: inline-block;
         grid-area: label;
-        justify-self:left;
-        margin-left:20%;
+        justify-self: left;
+        margin-left: 20%;
         margin-top: 3.2rem;
     }
 
