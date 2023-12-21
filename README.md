@@ -1,6 +1,6 @@
 Avance de proyecto final curso "Desarrollo Web" de Coderhouse. 
 Comisión 49680
-1 Index 4 pages
+1 Index 4 pages.
 
 Consite en una página para un estudio de abogados en la que se puede encontrar la información del estudio, 
 del equipo, de los servicios ofrecidos en las diferentes áreas del derecho y un formulario de contacto para contratar.
