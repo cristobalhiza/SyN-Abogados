@@ -21,23 +21,22 @@
         <input type="checkbox" class="nav-toggle" id="toggle-nav">
         <nav class="nav">
             <ul class="main-menu">
-                <li class="main-menu__item"><a class="main-menu__link" href="nuestro-estudio.html">Nuestro Estudio</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="nuestro-estudio.html">Nuestro Estudio</a>
+                </li>
                 <li class="main-menu__item"><a class="main-menu__link" href="equipo.html">Equipo</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="areas.html">Áreas de Práctica</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-                <!-- BUSQUEDA / ICON MENU -->
+        <!-- BUSQUEDA / ICON MENU -->
         <input type="search" placeholder="Busqueda" class="search-input">
-        <label for="toggle-nav" class="nav-toggle-label"><img src="./img/menu-icon.svg" alt="menu icon"
+        <label for="toggle-nav" class="nav-toggle-label"><img src="../img/menu-icon.svg" alt="menu icon"
                 class="menu-icon"></label>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Nuestro Equipo</h1>
-                <p><em>Comprometidos con la excelencia</em></p>
-            </div>
+        <div class="team-intro">
+            <h1 class="team-intro__header">Nuestro Equipo</h1>
+            <p><em>Comprometidos con la excelencia</em></p>
             <img src="" alt="">
             <p>Ofrecemos practicas integrales que brindan a nuestros clientes ventajas competitivas, reducción de
                 tiempos en transacciones y optimización de costos.
@@ -48,53 +47,66 @@
                 que les permite tener una comprensión profunda de la naturaleza de las necesidades de nuestros clientes.
                 Desarrollamos estructuras legales eficientes y a la media, potencializando las fortalezas y mitigando
                 las debilidades de cada transacción.</p>
-            <article>
+        </div>
+        <section class="team-container">
+            <article class="team-article">
+                <figure class="team-article__img-wrapper">
+                    <img class="team-article__img" src="../img/equipo/schenkeprotrait-m.png" alt="retrato de Marcelo Schwenke">
+                </figure>
+            <div class="team-article__card">
                 <h2>Marcelo Schwenke Porflitt</h2>
-                <figure>
-                    <img src="" alt="retrato de Marcelo Schwenke">
-                    <figcaption>Socio</figcaption>
-                </figure>
-                <p>Descripción del miembro del equipo</p>
+                <p>Socio</p><br>
+                <p>*Descripción del miembro del equipo</p>
+            </div>
             </article>
-            <article>
+            <article class="team-article">
+                <figure class="team-article__img-wrapper">
+                    <img class="team-article__img" src="../img/equipo/camilasyn-m.png" alt="retrato de Camila Echeverría">
+                </figure>
+                <div class="team-article__card">
                 <h2>Camila Echeverría Melgarejo</h2>
-                <figure>
-                    <img src="" alt="retrato de Camila Echeverría">
-                    <figcaption>Socia</figcaption>
-                </figure>
-                <p>Descripción del miembro del equipo</p>
+                <p>Socia</p><br>
+                <p>*Descripción del miembro del equipo</p>
+                </div>
             </article>
-            <article>
+            <article class="team-article">
+                <figure class="team-article__img-wrapper">
+                    <img class="team-article__img" src="../img/equipo/nilo-m.jpg" alt="retrato de Eduardo Nilo">
+                </figure>
+                <div class="team-article__card">
                 <h2>Eduardo Javier Nilo Guerra</h2>
-                <figure>
-                    <img src="" alt="retrato de Eduardo Nilo">
-                    <figcaption>Socio</figcaption>
-                </figure>
-                <p>Descripción del miembro del equipo</p>
+                <p>Socio</p><br>
+                <p>*Descripción del miembro del equipo</p>
+                </div>
             </article>
-            <article>
-                <h2>María Josefina Errazuriz Tapia</h2>
-                <figure>
-                    <img src="" alt="retrato de María Josefina Errazuriz">
+            <article class="team-article team-article--mobile1">
+                <figure class="team-article__img-wrapper">
+                    <img class="team-article__img" src="" alt="retrato de María Josefina Errazuriz">
                     <figcaption>Asociada</figcaption>
                 </figure>
-                <p>Descripción del miembro del equipo</p>
+                <div class="team-article__card">
+                <h2>María Josefina Errazuriz Tapia</h2>
+                <p>*Descripción del miembro del equipo</p>
+            </div>
             </article>
-            <article>
-                <h2>Roberto Emiliano Cifuentes Vega</h2>
-                <figure>
-                    <img src="" alt="retrato de Roberto Cifuentes">
+            <article class="team-article team-article--mobile2" >
+                <figure class="team-article__img-wrapper">
+                    <img class="team-article__img" src="" alt="retrato de Roberto Cifuentes">
                     <figcaption>Asociado</figcaption>
                 </figure>
-                <p>Descripción del miembro del equipo</p>
+                <div class="team-article__card">
+                <h2>Roberto Emiliano Cifuentes Vega</h2>
+                <p>*Descripción del miembro del equipo</p>
+            </div>
             </article>
-            <article>
-                <h2>Maria Carolina Vial Risopatrón</h2>
-                <figure>
-                    <img src="" alt="retrato de Maria Carolina Vial">
+            <article class="team-article team-article--mobile2">
+                <figure class="team-article__img-wrapper">
+                    <img class="team-article__img" src="" alt="retrato de Maria Carolina Vial">
                     <figcaption>Asociada</figcaption>
                 </figure>
-                <p>Descripción del miembro del equipo</p>
+                <div class="team-article__card">
+                <h2>Maria Carolina Vial Risopatrón</h2>
+                <p>*Descripción del miembro del equipo</p>
             </article>
         </section>
     </main>
@@ -121,7 +133,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./pages/nuestro-estudio.html">Nuestro Estudio</a></li>
                 <li><a href="./pages/equipo.html">Equipo</a></li>
-                <li><a href="./pages/areas.html">Áreas de Práctica</a></li>
+                <li><a href="./areas.html">Áreas de Práctica</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>

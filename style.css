@@ -522,6 +522,64 @@ ul li {
     margin: 1rem auto;
 }
 
+/* PÁGINA NUESTRO EQUIPO */
+
+.team-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 3.2rem;
+    padding: 1rem;
+    gap: 1.6rem;
+    font-size: var(--size-texto);
+    text-align: justify;
+    border: var(--color-principal) solid 2px;
+    background-color: whitesmoke;
+}
+
+.team-intro__header {
+    color: #333;
+    font-size: var(--size-encabezado);
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1.6rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.team-article__card {
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
+    text-align: center;
+    line-height: 1.6rem;
+    padding: 1.6rem;
+    border-radius: 0 0 15px 15px;
+    width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.team-article__img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 15px 15px 0 0;
+    background-color: whitesmoke
+}
+.team-article__img-wrapper {
+    width: 50vw;
+    font-size: var(--size-texto);
+}
+
+.team-article__card h2 {
+    margin: 1.6rem;
+}
+
+.team-article--mobile1,
+.team-article--mobile2 {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 600px) {
