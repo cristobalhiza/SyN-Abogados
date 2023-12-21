@@ -2,26 +2,35 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyN Abogados - Equipo</title>
+    <title>SyN Abogados - Inicio</title>
 </head>
 
 <body>
-    <header>
-        <a title="SyN Abogados Inicio" href="../index.html">
-            <img src="../img/logosyn.png" alt="Logo Schwenke y Nilo Abogados">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="./nuestro-estudio.html">Nuestro Estudio</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="./areas.html">Áreas de Práctica</a></li>
-                <li><a href="./informa.html">SyNLegal Informa</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <!-- LOGO  -->
+    <header class="header">
+        <div class="logo-wrapper">
+            <a title="SyN Abogados Inicio" href="../index.html" class="logo__link">
+                <img src="../img/logosyn.png" alt="Logo Schwenke y Nilo Abogados" class="logo__img">
+            </a>
+        </div>
+        <!-- MENU LISTA -->
+        <input type="checkbox" class="nav-toggle" id="toggle-nav">
+        <nav class="nav">
+            <ul class="main-menu">
+                <li class="main-menu__item"><a class="main-menu__link" href="nuestro-estudio.html">Nuestro Estudio</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="equipo.html">Equipo</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="areas.html">Áreas de Práctica</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+                <!-- BUSQUEDA / ICON MENU -->
+        <input type="search" placeholder="Busqueda" class="search-input">
+        <label for="toggle-nav" class="nav-toggle-label"><img src="./img/menu-icon.svg" alt="menu icon"
+                class="menu-icon"></label>
     </header>
     <main>
         <section>
@@ -89,31 +98,31 @@
             </article>
         </section>
     </main>
-    <footer>
-        <section class="footerContacto">
-            <h3>Nuestras oficinas:</h3>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <section class="footer-contacto">
+            <h4 class="footer__heading">Nuestras oficinas:</h4>
             <p>
-            <address>Avenida Arturo Prat, Valdivia, Región de Los Ríos, Chile<br>
-                Avenida Libertador Bernardo O'higgins 3421, Santiago, Región Metropolitana, Chile</address><br>
+            <address>Av. Arturo Prat, Valdivia, Región de Los Ríos, Chile</p>
+                <p>Av. Libertador Bernardo O'higgins 3421, Santiago, Chile
+            </address><br>
             +56 2 9876 5432<br>
             estudio@synabogados.cl<br>
             </p>
         </section>
-        <div class="footerCentro">
-            <p>© 2023 SyN Abogados | <a href="diclaimer.html">Disclaimer</a> | <a
-                    href="privacidadycookies.html">Políticas de Privacidad y Cookies</a></p>
+        <div class="footer-centro">
+            <p class="footer-centro__text">© 2023 SyN Abogados </p> | <a href="diclaimer.html">Disclaimer</a> |
+            <a href="privacidadycookies.html">Políticas de Privacidad y Cookies</a>
         </div>
-        <div class="footerMapa">
-            <p>
-                Mapa del sitio
-            </p>
-            <ul>
-                <li><a href="./nuestro-estudio.html">Nuestro Estudio</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="./areas.html">Áreas de Práctica</a></li>
-                <li><a href="./informa.html">SyNLegal Informa</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
+        <div class="footer-mapa">
+            <h4 class="footer__heading">Mapa del sitio</h4>
+            <ul class="footer-mapa__links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./pages/nuestro-estudio.html">Nuestro Estudio</a></li>
+                <li><a href="./pages/equipo.html">Equipo</a></li>
+                <li><a href="./pages/areas.html">Áreas de Práctica</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
     </footer>
