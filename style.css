@@ -566,6 +566,7 @@ ul li {
     border-radius: 15px 15px 0 0;
     background-color: whitesmoke
 }
+
 .team-article__img-wrapper {
     width: 50vw;
     font-size: var(--size-texto);
@@ -774,6 +775,7 @@ ul li {
         justify-self: center;
         align-self: center;
     }
+
     .main-menu {
         /* background-color: transparent; */
     }
@@ -844,10 +846,10 @@ ul li {
         background-color: var(--color-principal);
     }
 
-.main-menu__link:visited,
-.main-menu__link:link {
-    color: inherit;
-}
+    .main-menu__link:visited,
+    .main-menu__link:link {
+        color: inherit;
+    }
 
     .services {
         grid-template-columns: repeat(3, 1fr);
