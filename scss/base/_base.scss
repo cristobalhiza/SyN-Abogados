@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+@mixin MQ-md {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin MQ-L {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin MQ-XL {
+  @media (min-width:1200px) {
+    @content;
+  }
+}
