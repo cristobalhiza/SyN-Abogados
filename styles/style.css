@@ -19,7 +19,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #005989;
+  color: hsl(201, 100%, 27%);
 }
 
 a:visited,
@@ -37,7 +37,7 @@ ul li {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "logo centro derecha";  */
   display: flex;
-  border-bottom: #005989 solid 1px;
+  border-bottom: hsl(201, 100%, 27%) solid 1px;
   justify-content: space-around;
   min-height: 8vh;
   position: sticky;
@@ -123,7 +123,7 @@ ul li {
   .nav {
     position: initial;
     background-color: transparent;
-    color: #005989;
+    color: hsl(201, 100%, 27%);
     display: flex;
     height: 100%;
   }
@@ -132,7 +132,7 @@ ul li {
 .main-menu {
   list-style: none;
   padding-left: 0;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   font-size: 1.6rem;
   width: 100%;
   position: absolute;
@@ -147,7 +147,7 @@ ul li {
 @media (min-width: 1200px) {
   .main-menu__item:hover {
     color: #ffffff;
-    background-color: #005989;
+    background-color: hsl(201, 100%, 27%);
   }
 }
 .main-menu__link {
@@ -158,13 +158,13 @@ ul li {
   font-size: 1.6rem;
 }
 .main-menu__link:hover {
-  color: #005989;
+  color: hsl(201, 100%, 27%);
   background-color: #ffffff;
-  border: #005989 solid 2px;
+  border: hsl(201, 100%, 27%) solid 2px;
 }
 @media (min-width: 1200px) {
   .main-menu__link:hover {
-    background-color: #005989;
+    background-color: hsl(201, 100%, 27%);
     align-content: centers;
   }
 }
@@ -213,7 +213,7 @@ ul li {
   justify-content: start;
   align-items: center;
   font-size: 1.4rem;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   color: #ffffff;
   font-weight: 500;
   padding: 1.6rem;
@@ -239,7 +239,7 @@ ul li {
   order: 3;
   min-width: 120px;
   line-height: 2.4rem;
-  color: #005989;
+  color: hsl(201, 100%, 27%);
   color: #ffffff;
 }
 .footer-centro__text {
@@ -317,8 +317,9 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @media (min-width: 1000px) {
   .about-container__text {
@@ -348,6 +349,7 @@ ul li {
 .about-container__img {
   object-fit: cover;
   max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @media (min-width: 1000px) {
   .about-container__img {
@@ -391,7 +393,7 @@ ul li {
   justify-content: center;
   align-items: center;
   border-top: black solid 1px;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   color: #ffffff;
   min-height: 250px;
   flex-grow: 1;
@@ -464,6 +466,42 @@ ul li {
   }
 }
 
+.boton-contacto {
+  appearance: none;
+  background-color: whitesmoke;
+  border: 1px solid #1A1A1A;
+  border-radius: 18px;
+  color: hsl(201, 100%, 27%);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  min-height: 60px;
+  outline: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  width: fit-content;
+  will-change: transform;
+  position: relative;
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.boton-contacto:disabled {
+  pointer-events: none;
+}
+.boton-contacto:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.boton-contacto:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
 /* PORTADA */
 .slogan {
   color: black;
@@ -498,7 +536,7 @@ ul li {
 
 .hero-container {
   background-image: url(../img/portadaindex-L.jpg);
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -520,7 +558,7 @@ ul li {
 .hero-container__cta-link {
   height: 6.6rem;
   padding: 10px 15px 10px 15px;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   color: #ffffff;
   border: black solid 2px;
   border-radius: 20px;
@@ -528,7 +566,7 @@ ul li {
   font-size: 1.6rem;
 }
 .hero-container__cta-link:hover {
-  color: #005989;
+  color: hsl(201, 100%, 27%);
   background-color: #ffffff;
   font-weight: 600;
 }
@@ -646,7 +684,7 @@ ul li {
   row-gap: 2rem;
   justify-items: center;
   margin: 3.2rem;
-  border: #005989 solid 2px;
+  border: hsl(201, 100%, 27%) solid 2px;
 }
 .contact-form__input {
   min-width: 10rem;
@@ -656,7 +694,7 @@ ul li {
   padding: 2rem 1rem;
   border: none;
   outline: none;
-  border-bottom: 2px solid #005989;
+  border-bottom: 2px solid hsl(201, 100%, 27%);
   background: #ffffff;
   font-weight: 400;
   text-align: left;
@@ -710,7 +748,7 @@ ul li {
 }
 .contact-form__consulta-label {
   font-size: 1.6rem;
-  color: #005989;
+  color: hsl(201, 100%, 27%);
   font-weight: 600;
   margin-left: 1rem;
 }
@@ -734,7 +772,7 @@ ul li {
   padding: 0.5rem;
   display: block;
   min-width: 16rem;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   color: #ffffff;
   font-size: 1.6rem;
   border-radius: 2rem;
@@ -758,12 +796,37 @@ ul li {
     justify-items: center;
     align-items: start;
     column-gap: 1.6rem;
-    border: #005989 solid 3px;
+    border: hsl(201, 100%, 27%) solid 3px;
   }
 }
 
 ::placeholder {
-  color: #005989;
+  color: hsl(201, 100%, 27%);
+}
+
+.boton-consulta {
+  display: grid;
+  place-content: center;
+  margin: 5rem auto 10rem;
+}
+.boton-consulta--desktop {
+  display: none;
+}
+@media (min-width: 600px) {
+  .boton-consulta--desktop {
+    display: grid;
+    place-content: center;
+    margin: 10rem auto 5rem;
+  }
+}
+.boton-consulta--mobile {
+  width: 75%;
+  margin: 10rem auto;
+}
+@media (min-width: 600px) {
+  .boton-consulta--mobile {
+    display: none;
+  }
 }
 
 /* PÁGINA NUESTRO EQUIPO */
@@ -775,7 +838,7 @@ ul li {
   gap: 1.6rem;
   font-size: 1.6rem;
   text-align: justify;
-  border: #005989 solid 2px;
+  border: hsl(201, 100%, 27%) solid 2px;
   background-color: whitesmoke;
 }
 .team-intro__header {
@@ -796,7 +859,7 @@ ul li {
 }
 .team-article__card {
   color: #ffffff;
-  background-color: #005989;
+  background-color: hsl(201, 100%, 27%);
   text-align: center;
   line-height: 1.6rem;
   padding: 1.6rem;

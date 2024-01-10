@@ -1,0 +1,23 @@
+.boton-consulta {
+    display: grid;
+    place-content: center;
+    margin: 5rem auto 10rem;
+
+    &--desktop {
+        display: none;
+
+        @include MQ-md {
+            display: grid;
+            place-content: center;
+            margin: 10rem auto 5rem;
+        }
+    }
+
+    &--mobile {
+        width: 75%;
+        margin: 10rem auto;
+        @include  MQ-md {
+            display: none;
+    }
+}
+}
