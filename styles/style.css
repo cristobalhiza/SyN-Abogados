@@ -239,7 +239,7 @@ ul li {
 }
 
 .hero-container {
-  background-image: url(./img/portadaindex-L.jpg);
+  background-image: url(../img/portadaindex-L.jpg);
   background-color: #005989;
   display: flex;
   flex-flow: column wrap;
