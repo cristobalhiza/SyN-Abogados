@@ -1,3 +1,111 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
+/* PORTADA */
+.slogan {
+    color: black;
+    font-weight: 600;
+    font-size: $size-texto;
+    align-self: flex-start;
+    margin-left: 2.5rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 4vh;
+
+    &__text {
+        background-color: hsl(0, 0%, 100%, .0);
+        border-radius: 5px;
+        padding: 0.4rem;
+        margin: 0.4rem;
+        font-weight: 500;
+        
+        @include MQ-L() {
+            margin-left: .2rem;
+            padding: 0;
+            font-size: 1.8rem;
+        }
+    }
+
+    @include MQ-L() {
+            display: flex;
+            margin-top: 8rem;
+    }
+}
+
+.hero-container {
+    background-image: url(../img/portadaindex-L.jpg);
+    background-color: $color-principal;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30%;
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: top left 25%;
+    background-repeat: no-repeat;
+
+    &__heading {
+        display: none;
+    }
+
+    &__cta-wrapper {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    &__cta-link {
+        height: 6.6rem;
+        padding: 10px 15px 10px 15px;
+        background-color: $color-principal;
+        color: $color-secundario;
+        border: black solid 2px;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: $size-texto;
+
+        &:hover {
+            color: $color-principal;
+            background-color: $color-secundario;
+            font-weight: 600;
+        }
+    }
+
+    @include MQ-L() {
+        background-position: top center
+    }
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+    width: 100vw;
+    min-height: 160px;
+    padding: 3.2rem;
+    background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    margin: 3.2rem 0;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+
+    &__text {
+        color: $color-secundario;
+        font-size: $size-texto;
+        font-weight: 500;
+        
+        @include MQ-L() {
+            font-size: $size-encabezado;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 1.6rem;
+        display: inline-block;
+    }
+
+    @include MQ-L() {
+        margin-bottom: 10rem;
+        min-height: 33vh;
+    }
+}

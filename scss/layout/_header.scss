@@ -1,3 +1,177 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+/* HEADER */
+.header {
+    /* display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo centro derecha";  */
+    display: flex;
+    border-bottom: $color-principal solid 1px;
+    justify-content: space-around;
+    min-height: 8vh;
+    position: sticky;
+    z-index: 500;
+    top: 0px;
+    background-color: hsl(0, 0%, 100%, .9);
+    width: 100%;
+
+    @include MQ-XL() {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1440px;
+    }
+}
+
+
+.logo-wrapper {
+    /* grid-area: logo; */
+    min-width: 150px;
+    width: 40vw;
+    max-width: 250px;
+    height: 10vh;
+    margin-left: 2rem;
+
+    &__img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+
+        @include MQ-XL() {
+            object-position: bottom;
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.search-input {
+    /* grid-area: derecha; */
+    align-self: center;
+    border-radius: 15px;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    min-height: 2.5rem;
+    width: 30%;
+    max-width: 25rem;
+    height: 50%;
+    order: 3;
+
+    @include MQ-XL() {
+        display: inline-block;
+        width: 12vw;
+        height: 50%;
+        align-self: center;
+        justify-self: flex-start;
+        margin-right: 5rem;
+        position: relative;
+    }
+}
+
+
+/* HEADER MENU */
+.menu-icon {
+    width: 100%;
+    object-fit: cover;
+    order: 2;
+
+    @include MQ-XL() {
+        display: none;
+    }
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    z-index: 500;
+
+    @include MQ-XL() {
+        position: initial;
+        background-color: transparent;
+        color: $color-principal;
+        display: flex;
+        height: 100%;
+    }
+}
+
+.main-menu {
+    list-style: none;
+    padding-left: 0;
+    background-color: $color-principal;
+    font-size: $size-texto;
+    width: 100%;
+    position: absolute;
+
+    &__item {
+        text-transform: uppercase;
+        border: $color-secundario solid 1px;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+
+        &:hover {
+            @include MQ-XL() {
+                color: $color-secundario;
+                background-color: $color-principal;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        font-size: $size-texto;
+
+        &:hover {
+            color: $color-principal;
+            background-color: $color-secundario;
+            border: $color-principal solid 2px;
+
+            @include MQ-XL() {
+                background-color: $color-principal;
+                align-content: centers;
+            }
+        }
+
+        @include MQ-XL() {
+            height: 8vh;
+            /* width: 100%; */
+            padding: 0;
+            margin-top: 6vh;
+        }
+
+        &:visited,
+        &:link {
+            @include MQ-XL() {
+                color: inherit;
+            }
+        }
+    }
+
+    @include MQ-XL() {
+        height: 100%;
+        display: flex;
+        background-color: transparent;
+        align-items: end;
+        width: 60vw;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.nav-toggle {
+    display: none;
+
+    &:checked~.nav {
+        display: inline-block;
+    }
+
+    &__label {
+        grid-area: derecha;
+        align-self: center;
+        margin-right: 1rem;
+        width: 25px;
+    }
+}

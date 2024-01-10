@@ -1,0 +1,62 @@
+/* PÁGINA NUESTRO EQUIPO */
+
+.team-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 3.2rem;
+    padding: 1rem;
+    gap: 1.6rem;
+    font-size: $size-texto;
+    text-align: justify;
+    border: $color-principal solid 2px;
+    background-color: whitesmoke;
+
+    &__header {
+        color: #333;
+        font-size: $size-encabezado;
+    }
+}
+
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1.6rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.team-article {
+    display: inline-block;
+
+    &__card {
+        color: $color-secundario;
+        background-color: $color-principal;
+        text-align: center;
+        line-height: 1.6rem;
+        padding: 1.6rem;
+        border-radius: 0 0 15px 15px;
+        width: 50vw;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        h2 {
+            margin: 1.6rem;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 15px 15px 0 0;
+        background-color: whitesmoke;
+
+        &-wrapper {
+            width: 50vw;
+            font-size: $size-texto;
+        }
+    }
+    &--mobile1,
+    &--mobile2 {
+    display: none;
+}
+}
