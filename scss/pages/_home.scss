@@ -8,6 +8,10 @@
     font-style: italic;
     font-weight: 500;
     margin-top: 4vh;
+    background-color: hsla(0, 0%, 100%, 0.12);
+    transition: background-color 3s ease-in;
+    border-radius: 20px;
+    padding: 0.4rem 1.6rem;
     
 
 
@@ -33,7 +37,7 @@
 
 .hero-container {
     background-image: url(../img/portadaindex-L.jpg);
-    background-color: $color-principal;
+    background-color: $color-secundario;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -44,6 +48,7 @@
     background-size: cover;
     background-position: top left 25%;
     background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
     &__heading {
         display: none;
@@ -72,7 +77,7 @@
     }
 
     @include MQ-L() {
-        background-position: top center
+        background-position: top left;
     }
 }
 
@@ -83,13 +88,11 @@
     min-height: 160px;
     padding: 3.2rem;
     background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
-    border-color: #000000;
-    border-width: 1px;
-    border-style: solid;
     margin: 3.2rem 0;
     display: flex;
     align-items: center;
     height: 20vh;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 
     &__text {
         color: $color-secundario;

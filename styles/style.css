@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'animate.css';
 * {
   margin: 0;
   padding: 0;
@@ -374,10 +375,19 @@ ul li {
   column-gap: 2.5rem;
 }
 .services-heading {
-  margin: 0 auto 50px;
+  margin: 50px auto 25px;
   text-align: center;
   color: #333;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 2px;
   font-size: 2.4rem;
+  text-shadow: -2px 1px 3px rgba(85, 85, 85, 0.56);
+}
+@media (min-width: 600px) {
+  .services-heading {
+    font-size: 2.8rem;
+  }
 }
 .services-article {
   display: flex;
@@ -399,7 +409,7 @@ ul li {
   flex-grow: 1;
   font-size: 1.4rem;
   border-radius: 0 0 15px 15px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 .services-article__img-wrapper {
   display: flex;
@@ -512,6 +522,10 @@ ul li {
   font-style: italic;
   font-weight: 500;
   margin-top: 4vh;
+  background-color: hsla(0, 0%, 100%, 0.12);
+  transition: background-color 3s ease-in;
+  border-radius: 20px;
+  padding: 0.4rem 1.6rem;
 }
 .slogan__text {
   background-color: hsla(0, 0%, 100%, 0);
@@ -536,7 +550,7 @@ ul li {
 
 .hero-container {
   background-image: url(../img/portadaindex-L.jpg);
-  background-color: hsl(201, 100%, 27%);
+  background-color: #ffffff;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -547,6 +561,7 @@ ul li {
   background-size: cover;
   background-position: top left 25%;
   background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .hero-container__heading {
   display: none;
@@ -572,7 +587,7 @@ ul li {
 }
 @media (min-width: 1000px) {
   .hero-container {
-    background-position: top center;
+    background-position: top left;
   }
 }
 
@@ -582,13 +597,11 @@ ul li {
   min-height: 160px;
   padding: 3.2rem;
   background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
-  border-color: #000000;
-  border-width: 1px;
-  border-style: solid;
   margin: 3.2rem 0;
   display: flex;
   align-items: center;
   height: 20vh;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .testimonial__text {
   color: #ffffff;
