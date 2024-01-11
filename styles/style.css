@@ -853,22 +853,26 @@ ul li {
   align-items: center;
   gap: 2rem;
 }
-
 .team-article {
   display: inline-block;
 }
 .team-article__card {
   color: #ffffff;
   background-color: hsl(201, 100%, 27%);
-  text-align: center;
-  line-height: 1.6rem;
+  text-align: justify;
+  line-height: 2rem;
   padding: 1.6rem;
   border-radius: 0 0 15px 15px;
   width: 50vw;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-size: 1.6rem;
 }
 .team-article__card h2 {
   margin: 1.6rem;
+  text-align: center;
+}
+.team-article__card p:nth-child(2) {
+  text-align: center;
 }
 .team-article__img {
   max-width: 100%;
@@ -880,7 +884,15 @@ ul li {
   width: 50vw;
   font-size: 1.6rem;
 }
-.team-article--mobile1, .team-article--mobile2 {
+.team-article--mobile1 {
+  display: none;
+}
+@media (min-width: 600px) {
+  .team-article--mobile1 {
+    display: inline-block;
+  }
+}
+.team-article--mobile2 {
   display: none;
 }
 
