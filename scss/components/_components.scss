@@ -99,6 +99,20 @@
         justify-content: space-between;
         background-color: transparent;
 
+        @include MQ-mt {
+
+            grid-column: span 2;
+            
+            &--index {
+                grid-row: 2/3 ;
+                grid-column: 2/4 ;
+                @include MQ-XL {
+                    grid-column: span 2;
+                    grid-row: auto;
+                }
+            }
+        }
+
         &__card {
             display: flex;
             flex-direction: column;
@@ -132,14 +146,14 @@
         &__heading {
             font-size: $size-texto;
             text-align: center;
-            margin-bottom: 1.6rem;
+            margin: 1rem auto;
             text-transform: uppercase;
         }
 
         &__text {
             font-size: $size-texto;
-            text-align: center;
-            padding: 1.6rem;
+            text-align: justify;
+            padding: 1.2rem;
         }
 
         &--mobile1 {
@@ -158,19 +172,19 @@
             }
         }
 
-        @include MQ-md {
+        @include MQ-mt {
                 padding: 4.5rem 3rem;
         }
     }
 
-    @include MQ-md {
-            grid-template-columns: repeat(2, 1fr);
+    @include MQ-mt {
+            grid-template: auto auto / 1fr 1fr 1fr 1fr;
             column-gap: 0;
         
     }
 
     @include MQ-XL() {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         margin: 0 auto 50px;
         padding: 0 0;
         column-gap: 0rem;
