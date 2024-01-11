@@ -8,6 +8,8 @@
     font-style: italic;
     font-weight: 500;
     margin-top: 4vh;
+    
+
 
     &__text {
         background-color: hsl(0, 0%, 100%, .0);
@@ -57,7 +59,7 @@
         padding: 10px 15px 10px 15px;
         background-color: $color-principal;
         color: $color-secundario;
-        border: black solid 2px;
+        border: $color-principal solid 2px;
         border-radius: 20px;
         font-weight: 400;
         font-size: $size-texto;
@@ -66,7 +68,6 @@
         &:hover {
             color: $color-principal;
             background-color: $color-secundario;
-            font-weight: 600;
         }
     }
 

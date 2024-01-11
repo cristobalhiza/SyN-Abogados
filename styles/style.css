@@ -560,7 +560,7 @@ ul li {
   padding: 10px 15px 10px 15px;
   background-color: hsl(201, 100%, 27%);
   color: #ffffff;
-  border: black solid 2px;
+  border: hsl(201, 100%, 27%) solid 2px;
   border-radius: 20px;
   font-weight: 400;
   font-size: 1.6rem;
@@ -569,7 +569,6 @@ ul li {
 .hero-container__cta-link:hover {
   color: hsl(201, 100%, 27%);
   background-color: #ffffff;
-  font-weight: 600;
 }
 @media (min-width: 1000px) {
   .hero-container {

@@ -2,9 +2,12 @@
 
 // 2. Vendors
 
+@import 'animate.css';
+
 // 3. Base stuff
 @import
   'base/_base.scss';
+  
 
 // 4. Layout-related sections
 @import
@@ -25,3 +28,4 @@
   'pages/equipo.scss';
 
 // 7. Themes
+
