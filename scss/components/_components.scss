@@ -67,6 +67,7 @@
         margin: 10rem auto;
     }
 }
+
 /* ARTICLES SERVICES */
 
 .services {
@@ -85,7 +86,8 @@
         border-radius: 10px;
         padding: 2px;
         font-size: $size-encabezado;
-        text-shadow: -2px 1px 3px rgba(85,85,85,0.56);
+        text-shadow: -2px 1px 3px rgba(85, 85, 85, 0.56);
+
         @include MQ-md {
             font-size: 2.8rem;
         }
@@ -102,10 +104,11 @@
         @include MQ-mt {
 
             grid-column: span 2;
-            
+
             &--index {
-                grid-row: 2/3 ;
-                grid-column: 2/4 ;
+                grid-row: 2/3;
+                grid-column: 2/4;
+
                 @include MQ-XL {
                     grid-column: span 2;
                     grid-row: auto;
@@ -158,29 +161,33 @@
 
         &--mobile1 {
             display: none;
+
             @include MQ-md {
                 display: block;
             }
+
             @include MQ-XL() {
                 display: block;
             }
         }
+
         &--mobile2 {
             display: none;
+
             @include MQ-XL() {
                 display: block;
             }
         }
 
         @include MQ-mt {
-                padding: 4.5rem 3rem;
+            padding: 4.5rem 3rem;
         }
     }
 
     @include MQ-mt {
-            grid-template: auto auto / 1fr 1fr 1fr 1fr;
-            column-gap: 0;
-        
+        grid-template: auto auto / 1fr 1fr 1fr 1fr;
+        column-gap: 0;
+
     }
 
     @include MQ-XL() {

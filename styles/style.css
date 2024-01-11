@@ -4,27 +4,21 @@
   margin: 0;
   padding: 0;
 }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 html {
   font-size: 62.5%;
   font-family: "Century Gothic", sans-serif;
   line-height: 1.15;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 a {
   text-decoration: none;
   color: hsl(201, 100%, 27%);
 }
-
-a:visited,
-a:link {
+a:visited, a:link {
   color: #ffffff;
 }
 

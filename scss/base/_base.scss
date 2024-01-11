@@ -1,21 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 
 html {
   font-size: 62.5%;
   font-family: 'Century Gothic', sans-serif;
   line-height: 1.15;
-  box-sizing: border-box;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 
 $color-principal: hsl(201, 100%, 27%);
 $color-secundario: #ffffff;
@@ -25,11 +23,11 @@ $size-encabezado: 2.4rem;
 a {
   text-decoration: none;
   color: $color-principal;
-}
 
-a:visited,
-a:link {
-  color: #ffffff;
+  &:visited,
+  &:link {
+    color: $color-secundario;
+  }
 }
 
 ul li {

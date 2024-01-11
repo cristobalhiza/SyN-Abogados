@@ -3,6 +3,7 @@
 .location-container {
     margin: 5rem auto;
     padding: 0 1.6rem;
+
     /* max-height: 620px; */
     @include MQ-L() {
         display: flex;
@@ -96,36 +97,36 @@
 
         &1 {
             @include MQ-L() {
-            grid-area: input1;
-            justify-self: end;
+                grid-area: input1;
+                justify-self: end;
+            }
         }
-        }
-        
+
         &2 {
             @include MQ-L() {
-            grid-area: input2;
-            justify-self: start;
-        }
+                grid-area: input2;
+                justify-self: start;
+            }
         }
 
         &3 {
             @include MQ-L() {
-            grid-area: input3;
-            justify-self: end;
-        }
+                grid-area: input3;
+                justify-self: end;
+            }
         }
 
         &4 {
             @include MQ-L() {
-            grid-area: input4;
-            justify-self: start;
+                grid-area: input4;
+                justify-self: start;
+            }
         }
-        }
-        
+
         @include MQ-L() {
-        max-width: none;
-        width: 60%;
-    }
+            max-width: none;
+            width: 60%;
+        }
     }
 
     &__consulta {
@@ -152,12 +153,12 @@
                 margin-top: 3.2rem;
             }
         }
-        
+
         @include MQ-L() {
-        grid-area: textArea;
-        justify-self: center;
-        width: 60%;
-    }
+            grid-area: textArea;
+            justify-self: center;
+            width: 60%;
+        }
     }
 
     &__submit {
@@ -183,13 +184,7 @@
         width: 80vw;
         margin: 10rem auto;
         display: grid;
-        grid-template:  [heading-left] "heading heading" auto  [heading-right]
-                        [input1-left] "input1  input2" auto    [input2-right]
-                        [input3-left] "input3  input4" auto    [input4-right]
-                        [label-left]   "label label" auto    [label-right]
-                        [textArea-left]"textArea textArea" auto[textArea-right]
-                        [submit-left]	"submit submit" auto   [submit-right]
-                        / auto auto;  
+        grid-template: [heading-left] "heading heading" auto [heading-right] [input1-left] "input1  input2" auto [input2-right] [input3-left] "input3  input4" auto [input4-right] [label-left] "label label" auto [label-right] [textArea-left]"textArea textArea" auto[textArea-right] [submit-left] "submit submit" auto [submit-right] / auto auto;
         justify-items: center;
         align-items: start;
         column-gap: 1.6rem;

@@ -18,8 +18,9 @@
 
     &__text--desktop {
         display: none;
+
         @include MQ-md {
-            display:inline-block;
+            display: inline-block;
         }
     }
 }
@@ -36,6 +37,7 @@
         grid-template-columns: 1fr 1fr;
         margin: 5rem 2.5rem;
     }
+
     @include MQ-L {
         grid-template-columns: repeat(3, 1fr);
         max-width: 1280px;
@@ -111,24 +113,26 @@
                 height: 100%;
                 object-fit: cover;
             }
+
             @include MQ-mt {
                 max-width: 362.5px;
             }
         }
     }
-    
+
     &--mobile1 {
         display: none;
+
         @include MQ-md {
             display: inline-block;
         }
     }
 
     &--mobile2 {
-    display: none;
-    @include MQ-L {
-        display: inline-block;
+        display: none;
+
+        @include MQ-L {
+            display: inline-block;
+        }
     }
 }
-}
-
