@@ -42,6 +42,12 @@ ul li {
   }
 }
 
+@mixin MQ-mt {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
 @mixin MQ-L {
   @media (min-width: 1000px) {
     @content;

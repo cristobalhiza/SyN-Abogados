@@ -1,0 +1,171 @@
+/* SECCIÓN NOSOTROS */
+
+.about-container {
+    display: grid;
+    grid-template-rows: 0.8fr 1fr;
+    align-items: start;
+    row-gap: 0;
+    max-height: 700px;
+    margin: 3.2rem auto;
+
+    &__text {
+        border-width: 1px 1px 0px 1px;
+        border-style: solid;
+        border-color: black;
+        margin: 3.2rem auto 0 auto;
+        text-align: justify;
+        line-height: 1.5;
+        padding: 1.4rem 2.8rem;
+        max-width: 500px;
+        font-size: $size-texto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-principal;
+        color: $color-secundario;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        @include MQ-L() {
+            margin: 0 0 0 auto;
+            height: 402px;
+            max-width: 72rem;
+            width: 33vw;
+            min-width: 50rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 1.6rem;
+    }
+
+    &__img-wrapper {
+        margin: 0 auto 25px auto;
+        max-width: 500px;
+        height: fit-content;
+
+        @include MQ-L() {
+            margin: 0 auto 0 0;
+            max-width: 72rem;
+            width: 33vw;
+            min-width: 50rem;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        max-width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        @include MQ-L() {
+            height: 402px;
+        }
+    }
+
+    @include MQ-L() {
+        display: flex;
+        align-items: start;
+        margin: 10rem auto;
+    }
+}
+/* ARTICLES SERVICES */
+
+.services {
+    max-width: 1280px;
+    margin: 0 25px 50px;
+    display: grid;
+    justify-items: center;
+    row-gap: 5rem;
+    column-gap: 2.5rem;
+
+    &-heading {
+        margin: 0 auto 50px;
+        text-align: center;
+        color: #333;
+        font-size: $size-encabezado;
+    }
+
+    &-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        justify-content: space-between;
+        background-color: transparent;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top: black solid 1px;
+            background-color: $color-principal;
+            color: $color-secundario;
+            min-height: 250px;
+            flex-grow: 1;
+            font-size: 1.4rem;
+            border-radius: 0 0 15px 15px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        &__img-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            column-gap: 0;
+            background-color: whitesmoke;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        &__img {
+            object-fit: cover;
+            max-width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        &__heading {
+            font-size: $size-texto;
+            text-align: center;
+            margin-bottom: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            font-size: $size-texto;
+            text-align: center;
+            padding: 1.6rem;
+        }
+
+        &--mobile1 {
+            display: none;
+            @include MQ-md {
+                display: block;
+            }
+            @include MQ-XL() {
+                display: block;
+            }
+        }
+        &--mobile2 {
+            display: none;
+            @include MQ-XL() {
+                display: block;
+            }
+        }
+
+        @include MQ-md {
+                padding: 4.5rem 3rem;
+        }
+    }
+
+    @include MQ-md {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 0;
+        
+    }
+
+    @include MQ-XL() {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto 50px;
+        padding: 0 0;
+        column-gap: 0rem;
+    }
+}
