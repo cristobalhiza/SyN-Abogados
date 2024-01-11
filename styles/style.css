@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
   font-family: "Century Gothic", sans-serif;
   line-height: 1.15;
+  box-sizing: border-box;
 }
 
 a {
@@ -721,7 +722,7 @@ ul li {
   background: #ffffff;
   font-weight: 400;
   text-align: left;
-  transition: 0.4 linear;
+  transition: 0.4s linear;
   font-size: 1.6rem;
 }
 .contact-form__input:focus, .contact-form__input:valid {
