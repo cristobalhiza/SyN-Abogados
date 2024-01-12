@@ -17,14 +17,14 @@
 // 5. Components
 @import
 'components/_components.scss',
-'components/button';
+'components/_button';
 
 // 6. Page-specific styles
 @import
   'pages/_home.scss',
   'pages/_contacto.scss',
   'pages/_nuestro-estudio.scss',
-  'pages/equipo.scss';
+  'pages/_equipo.scss';
 
 // 7. Themes
 
