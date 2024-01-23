@@ -55,25 +55,29 @@
     }
 
     &__cta-wrapper {
-        position: relative;
-        margin-bottom: 100px;
-    }
-
-    &__cta-link {
-        height: 6.6rem;
-        padding: 10px 15px 10px 15px;
-        background-color: $color-principal;
+        margin: 0 auto 8%;
+        height: 48px;
+        padding: 6px 14px 8px 14px;
+        background-color: hsl(201, 100%, 27%, .9);
         color: $color-secundario;
         border: $color-principal solid 2px;
         border-radius: 20px;
-        font-weight: 400;
-        font-size: $size-texto;
+        width: fit-content;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &:hover {
-            color: $color-principal;
+            color: $color-principal !important;
             background-color: $color-secundario;
         }
+    }
+
+    &__cta-link {
+        font-weight: 400;
+        font-size: $size-texto;
+        color: inherit !important;
     }
 
     @include MQ-L() {
@@ -112,5 +116,67 @@
     @include MQ-L() {
         margin-bottom: 10rem;
         min-height: 33vh;
+    }
+}
+
+.carousel {
+    margin: 0 auto;
+    padding: 0 5%;
+
+    @media (max-width: 800px) {
+        padding: 0;        
+    }
+
+    &-item {
+        height: 86vh;
+    }
+
+    &__slogan {
+        color: white;
+        font-size: $size-encabezado;
+        font-style: italic;
+        font-weight: 500;
+        background-color: hsl(201, 100%, 27%, .7);
+        transition: background-color 2s ease-in;
+        border-radius: 20px;
+        padding: 0.4rem 1.6rem;
+        width: fit-content;
+        margin: 0 auto 5% auto;
+        position: absolute;
+        top: 10%;
+        left: 18%;
+    }
+
+    &-caption {
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        font-size: 2rem;
+        color: $color-secundario;
+        background-color: hsl(201, 100%, 27%, .6);
+        transition: background-color 2s ease-in;
+        padding: 0.4rem 1.6rem;
+        position: relative;
+        bottom: 50%;
+        max-width: 50%;
     }
 }

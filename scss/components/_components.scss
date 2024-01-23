@@ -86,10 +86,14 @@
         border-radius: 10px;
         padding: 2px;
         font-size: $size-encabezado;
+        font-family: $font-encabezado;
         text-shadow: -2px 1px 3px rgba(85, 85, 85, 0.56);
 
         @include MQ-md {
             font-size: 2.8rem;
+        }
+        @include MQ-L {
+            font-size: 3.6rem;
         }
     }
 
