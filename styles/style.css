@@ -329,6 +329,8 @@ ul li {
 }
 .about-container__heading {
   margin-bottom: 1.6rem;
+  font-family: "Forum", serif;
+  font-weight: bold;
 }
 .about-container__img-wrapper {
   margin: 0 auto 25px auto;
@@ -378,7 +380,7 @@ ul li {
   border-radius: 10px;
   padding: 2px;
   font-size: 2.4rem;
-  font-family: "Italiana", sans-serif;
+  font-family: "Forum", serif;
   text-shadow: -2px 1px 3px rgba(85, 85, 85, 0.56);
 }
 @media (min-width: 600px) {
@@ -446,6 +448,8 @@ ul li {
   text-align: center;
   margin: 1rem auto;
   text-transform: uppercase;
+  font-family: "Forum", serif;
+  font-weight: bold;
 }
 .services-article__text {
   font-size: 1.6rem;
@@ -501,7 +505,6 @@ ul li {
   color: hsl(201, 100%, 27%);
   cursor: pointer;
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   min-height: 60px;
@@ -529,61 +532,7 @@ ul li {
   transform: translateY(0);
 }
 
-/* PORTADA */
-.slogan {
-  color: black;
-  font-weight: 600;
-  font-size: 1.6rem;
-  align-self: flex-start;
-  margin-left: 2.5rem;
-  font-style: italic;
-  font-weight: 500;
-  margin-top: 4vh;
-  background-color: hsla(0, 0%, 100%, 0.12);
-  transition: background-color 3s ease-in;
-  border-radius: 20px;
-  padding: 0.4rem 1.6rem;
-}
-.slogan__text {
-  background-color: hsla(0, 0%, 100%, 0);
-  border-radius: 5px;
-  padding: 0.4rem;
-  margin: 0.4rem;
-  font-weight: 500;
-}
-@media (min-width: 1000px) {
-  .slogan__text {
-    margin-left: 0.2rem;
-    padding: 0;
-    font-size: 1.8rem;
-  }
-}
-@media (min-width: 1000px) {
-  .slogan {
-    display: flex;
-    margin-top: 8rem;
-  }
-}
-
-.hero-container {
-  background-image: url(../img/portadaindex-L.jpg);
-  background-color: #ffffff;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30%;
-  width: 100vw;
-  height: 90vh;
-  background-size: cover;
-  background-position: top left 25%;
-  background-repeat: no-repeat;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-.hero-container__heading {
-  display: none;
-}
-.hero-container__cta-wrapper {
+.cta-wrapper {
   margin: 0 auto 8%;
   height: 48px;
   padding: 6px 14px 8px 14px;
@@ -597,52 +546,19 @@ ul li {
   flex-direction: column;
   justify-content: center;
 }
-.hero-container__cta-wrapper:hover {
+.cta-wrapper:hover {
   color: hsl(201, 100%, 27%) !important;
   background-color: #ffffff;
 }
-.hero-container__cta-link {
+.cta-wrapper__link {
   font-weight: 400;
   font-size: 1.6rem;
   color: inherit !important;
 }
-@media (min-width: 1000px) {
-  .hero-container {
-    background-position: top left;
-  }
-}
 
-/* TESTIMONIAL */
-.testimonial {
-  width: 100vw;
-  min-height: 160px;
-  padding: 3.2rem;
-  background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
-  margin: 3.2rem 0;
-  display: flex;
-  align-items: center;
-  height: 20vh;
-  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-}
-.testimonial__text {
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-@media (min-width: 1000px) {
-  .testimonial__text {
-    font-size: 2.4rem;
-  }
-}
-.testimonial__heading {
-  margin-bottom: 1.6rem;
-  display: inline-block;
-}
-@media (min-width: 1000px) {
-  .testimonial {
-    margin-bottom: 10rem;
-    min-height: 33vh;
-  }
+/* PORTADA */
+.h1 {
+  display: none;
 }
 
 .carousel {
@@ -659,10 +575,10 @@ ul li {
 }
 .carousel__slogan {
   color: white;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-style: italic;
   font-weight: 500;
-  background-color: hsla(201, 100%, 27%, 0.7);
+  background-color: hsla(201, 100%, 27%, 0.8);
   transition: background-color 2s ease-in;
   border-radius: 20px;
   padding: 0.4rem 1.6rem;
@@ -701,6 +617,39 @@ ul li {
   position: relative;
   bottom: 50%;
   max-width: 50%;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  width: 100vw;
+  min-height: 160px;
+  padding: 3.2rem;
+  background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
+  margin: 3.2rem 0;
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.testimonial__text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+@media (min-width: 1000px) {
+  .testimonial__text {
+    font-size: 2.4rem;
+  }
+}
+.testimonial__heading {
+  margin-bottom: 1.6rem;
+  display: inline-block;
+}
+@media (min-width: 1000px) {
+  .testimonial {
+    margin-bottom: 10rem;
+    min-height: 33vh;
+  }
 }
 
 /* LOCATION */

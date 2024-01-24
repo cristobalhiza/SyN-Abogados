@@ -36,6 +36,8 @@
 
     &__heading {
         margin-bottom: 1.6rem;
+        font-family: $font-encabezado;
+        font-weight: bold;
     }
 
     &__img-wrapper {
@@ -155,12 +157,14 @@
             text-align: center;
             margin: 1rem auto;
             text-transform: uppercase;
+            font-family: $font-encabezado;
+            font-weight: bold;
         }
 
         &__text {
             font-size: $size-texto;
-            text-align: justify;
-            padding: 1.2rem;
+            text-align:justify;
+            padding: 1.2rem;    
         }
 
         &--mobile1 {

@@ -1,124 +1,8 @@
 /* PORTADA */
-.slogan {
-    color: black;
-    font-weight: 600;
-    font-size: $size-texto;
-    align-self: flex-start;
-    margin-left: 2.5rem;
-    font-style: italic;
-    font-weight: 500;
-    margin-top: 4vh;
-    background-color: hsla(0, 0%, 100%, 0.12);
-    transition: background-color 3s ease-in;
-    border-radius: 20px;
-    padding: 0.4rem 1.6rem;
 
-
-
-    &__text {
-        background-color: hsl(0, 0%, 100%, .0);
-        border-radius: 5px;
-        padding: 0.4rem;
-        margin: 0.4rem;
-        font-weight: 500;
-
-        @include MQ-L() {
-            margin-left: .2rem;
-            padding: 0;
-            font-size: 1.8rem;
-        }
-    }
-
-    @include MQ-L() {
-        display: flex;
-        margin-top: 8rem;
-    }
+.h1 {
+    display: none;
 }
-
-.hero-container {
-    background-image: url(../img/portadaindex-L.jpg);
-    background-color: $color-secundario;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30%;
-    width: 100vw;
-    height: 90vh;
-    background-size: cover;
-    background-position: top left 25%;
-    background-repeat: no-repeat;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-
-    &__heading {
-        display: none;
-    }
-
-    &__cta-wrapper {
-        margin: 0 auto 8%;
-        height: 48px;
-        padding: 6px 14px 8px 14px;
-        background-color: hsl(201, 100%, 27%, .9);
-        color: $color-secundario;
-        border: $color-principal solid 2px;
-        border-radius: 20px;
-        width: fit-content;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        &:hover {
-            color: $color-principal !important;
-            background-color: $color-secundario;
-        }
-    }
-
-    &__cta-link {
-        font-weight: 400;
-        font-size: $size-texto;
-        color: inherit !important;
-    }
-
-    @include MQ-L() {
-        background-position: top left;
-    }
-}
-
-/* TESTIMONIAL */
-
-.testimonial {
-    width: 100vw;
-    min-height: 160px;
-    padding: 3.2rem;
-    background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
-    margin: 3.2rem 0;
-    display: flex;
-    align-items: center;
-    height: 20vh;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-
-    &__text {
-        color: $color-secundario;
-        font-size: $size-texto;
-        font-weight: 500;
-
-        @include MQ-L() {
-            font-size: $size-encabezado;
-        }
-    }
-
-    &__heading {
-        margin-bottom: 1.6rem;
-        display: inline-block;
-    }
-
-    @include MQ-L() {
-        margin-bottom: 10rem;
-        min-height: 33vh;
-    }
-}
-
 .carousel {
     margin: 0 auto;
     padding: 0 5%;
@@ -133,10 +17,10 @@
 
     &__slogan {
         color: white;
-        font-size: $size-encabezado;
+        font-size: $size-texto;
         font-style: italic;
         font-weight: 500;
-        background-color: hsl(201, 100%, 27%, .7);
+        background-color: hsl(201, 100%, 27%, .8);
         transition: background-color 2s ease-in;
         border-radius: 20px;
         padding: 0.4rem 1.6rem;
@@ -178,5 +62,39 @@
         position: relative;
         bottom: 50%;
         max-width: 50%;
+    }
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+    width: 100vw;
+    min-height: 160px;
+    padding: 3.2rem;
+    background: linear-gradient(135deg, rgb(0, 89, 137) 35%, rgb(57, 139, 183) 70%, rgb(165, 214, 242) 96%);
+    margin: 3.2rem 0;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+    &__text {
+        color: $color-secundario;
+        font-size: $size-texto;
+        font-weight: 500;
+
+        @include MQ-L() {
+            font-size: $size-encabezado;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 1.6rem;
+        display: inline-block;
+    }
+
+    @include MQ-L() {
+        margin-bottom: 10rem;
+        min-height: 33vh;
     }
 }
