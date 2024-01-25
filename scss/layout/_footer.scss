@@ -39,10 +39,10 @@
         &__text {
             display: inline-block;
         }
-        
+
         @include MQ-L() {
-        order: 2;
-        max-width: 43%;
+            order: 2;
+            max-width: 43%;
         }
     }
 

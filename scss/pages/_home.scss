@@ -3,12 +3,13 @@
 .h1 {
     display: none;
 }
+
 .carousel {
     margin: 0 auto;
     padding: 0 5%;
 
     @media (max-width: 800px) {
-        padding: 0;        
+        padding: 0;
     }
 
     &-item {
