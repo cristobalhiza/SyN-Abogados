@@ -1,4 +1,4 @@
-Avance de proyecto final curso "Desarrollo Web" de Coderhouse. 
+Proyecto final del curso "Desarrollo Web" de Coderhouse. 
 Comisión 49680
 1 Index 4 pages.
 
@@ -7,4 +7,4 @@ del equipo, de los servicios ofrecidos en las diferentes áreas del derecho y un
 
 Las imágenes son recolectadas de internet, no declaro ninguna propiedad sobre estos y tienen meramente un fin educacional.
 
-Código desarrollado por Cristobal Hiza, diciembre 2023.  
+Código desarrollado por Cristobal Hiza, última versión enero 2024.  
