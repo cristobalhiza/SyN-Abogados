@@ -69,22 +69,3 @@
         align-items: center;
     }
 }
-
-/* PAGINA DE CONTACTO */
-
-/* HEADING */
-
-.contact-heading {
-    margin: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    font-size: $size-encabezado;
-    align-items: center;
-    color: #00456a;
-
-    @include MQ-L() {
-        grid-area: heading;
-        justify-self: center;
-    }
-}

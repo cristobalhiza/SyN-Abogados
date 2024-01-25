@@ -1,8 +1,37 @@
+/* PAGINA DE CONTACTO */
+
+/* HEADING */
+
+.contact-heading {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: $size-encabezado;
+    align-items: center;
+    color: #00456a;
+
+    &__h1 {
+        font-family: $font-encabezado;
+        font-weight: bold;
+    }
+
+    @include MQ-L() {
+        grid-area: heading;
+        justify-self: center;
+    }
+}
+
 /* LOCATION */
 
 .location-container {
     margin: 5rem auto;
     padding: 0 1.6rem;
+
+    &__heading {
+        font-family: $font-encabezado;
+        font-weight: bold;
+    }
 
     /* max-height: 620px; */
     @include MQ-L() {
@@ -28,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: whitesmoke;
-    color: black;
+    color: $color-principal;
 
     @include MQ-L() {
         margin: 0 0 0 auto;

@@ -49,6 +49,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
+
+    @include MQ-max-s {
+        margin: 0 auto 25%;
+    }
     
     &:hover {
         color: $color-principal !important;

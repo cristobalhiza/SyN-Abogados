@@ -274,24 +274,6 @@ ul li {
   }
 }
 
-/* PAGINA DE CONTACTO */
-/* HEADING */
-.contact-heading {
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  font-size: 2.4rem;
-  align-items: center;
-  color: #00456a;
-}
-@media (min-width: 1000px) {
-  .contact-heading {
-    grid-area: heading;
-    justify-self: center;
-  }
-}
-
 /* SECCIÓN NOSOTROS */
 .about-container {
   display: grid;
@@ -546,6 +528,11 @@ ul li {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 576px) {
+  .cta-wrapper {
+    margin: 0 auto 25%;
+  }
+}
 .cta-wrapper:hover {
   color: hsl(201, 100%, 27%) !important;
   background-color: #ffffff;
@@ -577,7 +564,6 @@ ul li {
   color: white;
   font-size: 1.6rem;
   font-style: italic;
-  font-weight: 500;
   background-color: hsla(201, 100%, 27%, 0.8);
   transition: background-color 2s ease-in;
   border-radius: 20px;
@@ -587,6 +573,12 @@ ul li {
   position: absolute;
   top: 10%;
   left: 18%;
+}
+@media (max-width: 576px) {
+  .carousel__slogan {
+    left: 10%;
+    right: 10%;
+  }
 }
 .carousel-caption {
   width: 100%;
@@ -652,11 +644,37 @@ ul li {
   }
 }
 
+/* PAGINA DE CONTACTO */
+/* HEADING */
+.contact-heading {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 2.4rem;
+  align-items: center;
+  color: #00456a;
+}
+.contact-heading__h1 {
+  font-family: "Forum", serif;
+  font-weight: bold;
+}
+@media (min-width: 1000px) {
+  .contact-heading {
+    grid-area: heading;
+    justify-self: center;
+  }
+}
+
 /* LOCATION */
 .location-container {
   margin: 5rem auto;
   padding: 0 1.6rem;
   /* max-height: 620px; */
+}
+.location-container__heading {
+  font-family: "Forum", serif;
+  font-weight: bold;
 }
 @media (min-width: 1000px) {
   .location-container {
@@ -682,7 +700,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   background-color: whitesmoke;
-  color: black;
+  color: hsl(201, 100%, 27%);
 }
 @media (min-width: 1000px) {
   .location-text {
@@ -885,6 +903,7 @@ ul li {
 .team-intro__header {
   color: #333;
   font-size: 2.4rem;
+  font-family: "Forum", serif;
 }
 .team-intro__text--desktop {
   display: none;
@@ -1005,6 +1024,14 @@ ul li {
   .team-article--mobile2 {
     display: inline-block;
   }
+}
+
+.services-heading {
+  font-family: "Forum", serif;
+}
+
+.services-article__text--page {
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */

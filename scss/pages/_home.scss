@@ -15,11 +15,11 @@
         height: 86vh;
     }
 
+
     &__slogan {
         color: white;
         font-size: $size-texto;
         font-style: italic;
-        font-weight: 500;
         background-color: hsl(201, 100%, 27%, .8);
         transition: background-color 2s ease-in;
         border-radius: 20px;
@@ -29,6 +29,11 @@
         position: absolute;
         top: 10%;
         left: 18%;
+
+        @include MQ-max-s {
+            left: 10%;
+            right: 10%;
+        }
     }
 
     &-caption {
