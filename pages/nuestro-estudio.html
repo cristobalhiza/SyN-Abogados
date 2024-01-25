@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +44,7 @@
     </header>
     <main>
         <h1 class="h1">Schwenke y Nilo Abogados, Estudio Jurídico</h1>
-        <section class="about-container about-container--publicacion">
+        <section class="about-container about-container--publicacion animate__animated animate__fadeInDown">
             <div class="about-container__text">
                 <h2>Lo que nos diferencia</h2>
                 <p>Ofrecemos practicas integrales que brindan a nuestros clientes ventajas competitivas, reducción de
@@ -62,11 +64,11 @@
                     class="about-container__img">
             </div>
         </section>
-        <div class="boton-consulta boton-consulta--desktop">
+        <div class="boton-consulta boton-consulta--desktop" data-aos="zoom-in">
             <button class="boton-contacto" role="button">Solicite gratis su primera consulta con nosotros <br>aquí </button>
         </div>
         <section>
-            <article class="about-container">
+            <article class="about-container" data-aos="fade-up" >
                 <div class="about-container__text">
                     <h2 class="about-container__heading">Nuestro Estudio</h2>
                     <p>Fundado en 1993, Schwenke & Nilo Abogados brinda un servicio de excelencia, con más de 30 años de
@@ -117,6 +119,10 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

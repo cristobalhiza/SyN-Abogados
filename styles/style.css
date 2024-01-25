@@ -888,6 +888,11 @@ ul li {
   }
 }
 
+.fade-in-top {
+  -webkit-animation: fade-in-top 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  animation: fade-in-top 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+}
+
 /* PÁGINA NUESTRO EQUIPO */
 .team-intro {
   display: flex;
