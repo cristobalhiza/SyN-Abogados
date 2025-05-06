@@ -1,177 +1,133 @@
 /* HEADER */
 .header {
-    /* display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "logo centro derecha";  */
-    display: flex;
-    border-bottom: $color-principal solid 1px;
-    justify-content: space-around;
-    min-height: 8vh;
-    position: sticky;
-    z-index: 500;
-    top: 0px;
-    background-color: hsl(0, 0%, 100%, .9);
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: $color-principal solid 1px;
+  min-height: 8vh;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background-color: hsl(0, 0%, 100%, .9);
+  width: 100%;
 
-    @include MQ-XL() {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1900px;
-    }
+  @include MQ-XL() {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 }
 
-
 .logo-wrapper {
-    /* grid-area: logo; */
-    min-width: 150px;
-    width: 40vw;
-    max-width: 250px;
-    height: 10vh;
-    margin-left: 2rem;
+  min-width: 120px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
 
-    &__img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-
-        @include MQ-XL() {
-            object-position: bottom;
-            max-width: 100%;
-            max-height: 100%;
-            margin-top: 1rem;
-        }
-    }
+  &__img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .search-input {
-    /* grid-area: derecha; */
-    align-self: center;
-    border-radius: 15px;
-    padding-left: 1rem;
-    font-size: 1.2rem;
-    min-height: 2.5rem;
-    width: 30%;
-    max-width: 25rem;
-    height: 50%;
-    order: 3;
+  border-radius: 15px;
+  padding: 0.4rem 1rem;
+  font-size: 1.1rem;
+  min-width: 150px;
+  max-width: 300px;
+  flex-shrink: 0;
 
-    @include MQ-XL() {
-        display: inline-block;
-        width: 12vw;
-        height: 50%;
-        align-self: center;
-        justify-self: flex-start;
-        margin-right: 5rem;
-        position: relative;
-    }
+  @include MQ-XL() {
+    margin-right: 2rem;
+  }
 }
 
-
-/* HEADER MENU */
+/* MENU ICON (Hamburguesa móvil) */
 .menu-icon {
-    width: 100%;
-    object-fit: cover;
-    order: 2;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  margin-left: 1rem;
 
-    @include MQ-XL() {
-        display: none;
-    }
+  @include MQ-XL() {
+    display: none;
+  }
 }
 
+/* NAVIGATION */
 .nav {
-    display: none;
-    position: absolute;
-    top: 10vh;
-    width: 100%;
-    z-index: 500;
+  display: none;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  background-color: $color-principal;
+  z-index: 400;
 
-    @include MQ-XL() {
-        position: initial;
-        background-color: transparent;
-        color: $color-principal;
-        display: flex;
-        height: 100%;
-    }
+  @include MQ-XL() {
+    display: flex !important;
+    position: static;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
 }
 
+/* MENU LIST */
 .main-menu {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include MQ-XL() {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    padding: 1rem;
+    color: red;
     background-color: $color-principal;
+    text-decoration: none;
     font-size: $size-texto;
-    width: 100%;
-    position: absolute;
 
-    &__item {
-        text-transform: uppercase;
-        border: $color-secundario solid 1px;
-        width: 100%;
-        text-align: center;
-        height: 100%;
-
-        &:hover {
-            @include MQ-XL() {
-                color: $color-secundario;
-                background-color: $color-principal;
-            }
-        }
-    }
-
-    &__link {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        padding: 2rem;
-        font-size: $size-texto;
-
-        &:hover {
-            color: $color-principal;
-            background-color: $color-secundario;
-            border: $color-principal solid 2px;
-
-            @include MQ-XL() {
-                background-color: $color-principal;
-                align-content: centers;
-            }
-        }
-
-        @include MQ-XL() {
-            height: 8vh;
-            /* width: 100%; */
-            padding: 0;
-            margin-top: 6vh;
-        }
-
-        &:visited,
-        &:link {
-            @include MQ-XL() {
-                color: inherit;
-            }
-        }
+    &:hover {
+      background-color: $color-secundario;
+      color: $color-principal;
     }
 
     @include MQ-XL() {
-        height: 100%;
-        display: flex;
-        background-color: transparent;
-        align-items: end;
-        width: 60vw;
-        position: relative;
-        margin: 0 auto;
+      background-color: transparent;
+      padding: 0.8rem 1.2rem;
+      color: $color-principal;
     }
+  }
 }
 
+/* NAV TOGGLE (checkbox hack para móviles) */
 .nav-toggle {
-    display: none;
+  display: none;
 
-    &:checked~.nav {
-        display: inline-block;
-    }
+  &:checked ~ .nav {
+    display: block;
+  }
 
-    &__label {
-        grid-area: derecha;
-        align-self: center;
-        margin-right: 1rem;
-        width: 25px;
+  &__label {
+    display: block;
+    cursor: pointer;
+
+    @include MQ-XL() {
+      display: none;
     }
+  }
 }

@@ -24,13 +24,20 @@
     <!-- BARRA DE NAVEGACIÓN -->
     <!-- LOGO  -->
     <header class="header">
+        <!-- LOGO -->
         <div class="logo-wrapper">
             <a title="SyN Abogados Inicio" href="./index.html" class="logo-wrapper__link">
                 <img src="./img/logosyn.png" alt="Logo Schwenke y Nilo Abogados" class="logo-wrapper__img">
             </a>
         </div>
-        <!-- MENU LISTA -->
-        <input type="checkbox" class="nav-toggle" id="toggle-nav">
+
+        <!-- TOGGLE (hamburguesa para móviles) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle__label">
+            <img src="./img/menu-icon.svg" alt="menu icon" class="menu-icon" />
+        </label>
+
+        <!-- MENÚ NAVEGACIÓN -->
         <nav class="nav">
             <ul class="main-menu">
                 <li class="main-menu__item"><a class="main-menu__link" href="./pages/nuestro-estudio.html">Nuestro
@@ -41,10 +48,9 @@
                 <li class="main-menu__item"><a class="main-menu__link" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <!-- BUSQUEDA / ICON MENU -->
-        <input type="search" placeholder="Busqueda" class="search-input">
-        <label for="toggle-nav" class="nav-toggle__label"><img src="./img/menu-icon.svg" alt="menu icon"
-                class="menu-icon"></label>
+
+        <!-- BUSCADOR -->
+        <input type="search" placeholder="Búsqueda" class="search-input" />
     </header>
     <!-- PORTADA -->
     <h1 class="h1">Schwenke y Nilo Abogados Estudio Jurídico</h1>
@@ -59,7 +65,8 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/carousel/carousel-2.jpg" class="d-block w-100 carousel__img" alt="Fotografía edificios corporativos vista desde abajo">
+                <img src="./img/carousel/carousel-2.jpg" class="d-block w-100 carousel__img"
+                    alt="Fotografía edificios corporativos vista desde abajo">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="carousel__slogan"><em>'La solución a sus asuntos en las mejores manos'</em></p>
                     <div class="cta-wrapper animate__animated animate__fadeInUp">
@@ -68,7 +75,8 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/carousel/carousel-1.jpg" class="d-block w-100 carousel__img" alt="Fotografía de personas visitando edificio">
+                <img src="./img/carousel/carousel-1.jpg" class="d-block w-100 carousel__img"
+                    alt="Fotografía de personas visitando edificio">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="carousel__slogan animate__animated animate__fadeInUp">Nos guiamos por los más altos
                         estándares éticos y <br>nos comprometemos a proporcionar asesoramiento legal con integridad.

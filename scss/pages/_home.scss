@@ -6,11 +6,7 @@
 
 .carousel {
     margin: 0 auto;
-    padding: 0 5%;
-
-    @media (max-width: 800px) {
-        padding: 0;
-    }
+    padding: 0 0;
 
     &-item {
         height: 86vh;
@@ -19,7 +15,7 @@
 
     &__slogan {
         color: white;
-        font-size: $size-texto;
+        font-size: 25px;
         font-style: italic;
         background-color: hsl(201, 100%, 27%, .8);
         transition: background-color 2s ease-in;
@@ -60,7 +56,7 @@
     }
 
     &__text {
-        font-size: 2rem;
+        font-size: 10rem;
         color: $color-secundario;
         background-color: hsl(201, 100%, 27%, .6);
         transition: background-color 2s ease-in;
